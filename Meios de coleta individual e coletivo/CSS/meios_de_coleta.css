@@ -1,0 +1,199 @@
+.fundo {
+  background-image: url("../../ImagensBase/fundo.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.logo {
+  position: absolute;
+  margin-top: 11px;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+}
+
+.menu {
+  background-color: #006400;
+  text-align: right;
+  height: 79.5px;
+  width: 100%;
+}
+
+.scroller {
+  position: sticky;
+  top: 0;
+}
+
+#fixo {
+  position: absolute;
+}
+
+#sub_menu {
+  display: none;
+  position: fixed;
+  right: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  position: fixed;
+  right: 0;
+  z-index: 1;
+}
+
+label[for="sub_menu"] {
+  display: none;
+  padding: 5px;
+  background-color: #009f00;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+body {
+  background-color: #f8f8ff;
+  font-family: sans-serif;
+  z-index: 3;
+}
+
+div {
+  background-color: #64a987;
+  width: 56%;
+  height: 32%;
+  margin-left: 21.5%;
+  margin-right: 22%;
+  color: white;
+  border: #009000 8px inset;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #008000;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  color: white;
+  font-family: 'Jost', sans-serif;
+}
+  
+
+p {
+  margin-left: 5px;
+  text-align: left;
+  margin-right: 5px;
+  line-height: 0.7cm;
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+  width: 98%;
+  height: 98%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 13px;
+  font-family: 'Jost', sans-serif;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.menu a {
+  display: block;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin-left: -4.5px;
+  background-color: #006400;
+  border-bottom: solid 1px #006400;
+  border-left: solid 2px #008000;
+}
+
+.menu a:hover {
+  background-color: #009f00;
+  color: black;
+  
+}
+.logo:hover{
+  content: url('../../ImagensBase/logoH.png');
+}
+#download:hover{
+  content: url('../../ImagensBase/download_simbolo_H.png');
+}
+@media(max-width: 1280px) {
+  .logo {
+    margin-top: 5px;
+    width: 150px;
+    height: 150px;
+  }
+  .titulo{
+    display:none;
+  }
+}
+@media(max-width: 1340px) {
+.titulo{
+  font-size: 15px;
+  margin-left: 15%;
+  
+}
+}
+
+@media(max-width: 950px) {
+  .fundo{
+    background-image: url("../../ImagensBase/fundo_menor.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }  
+  label[for='sub_menu'] {
+    display: block;
+  }
+  .menu {
+    transition: all 0.6s;
+    margin-left: -110%;
+  }
+  .menu ul li {
+    width: 100%;
+    float: none;
+  }
+  .logo {
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+  }
+  #sub_menu:checked~.menu {
+    transition: all 0.6s;
+    margin-left: 0;
+  }
+  #sub_menu:checked~.logo {
+    margin-left: -100%;
+    transition: all .6s;
+  }
+}
+
+.imagens {
+  width: 55%;
+  margin-left: 22%;
+  margin-right: 22%;
+  border: solid 6px #24a44b;
+}
+
+#download {
+ align-self: center;
+}
+
+.titulo {
+  margin-top: -55px;
+  margin-left: 15%;
+  font-family: 'Jost', sans-serif;
+}
